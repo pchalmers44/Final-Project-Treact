@@ -10,7 +10,7 @@
     <title>FES Module 2 Final Project</title>
 </head>
 <body>
-    <section id="landing"></section>
+    <section id="landing">
     <nav>
         <div class="row nav__row">
           <div class="nav__logo">
@@ -22,7 +22,7 @@
             <a href="#" class="nav__link">Blog</a>
             <a href="#" class="nav__link">Pricing</a>
             <a href="#" class="nav__link">Contact Us</a>
-            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
           <button class="btn__menu" onclick="openMenu()">
@@ -33,10 +33,23 @@
             </svg>
           </button>
         </div>
-      </nav>    
-    </section>
-
-
+      </nav> 
+      <div class="modal">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        </button>
+        <div class="modal__links">
+            <a href="#about" class="modal__link" onclick="closeMenu()">About</a>
+            <a href="#blog" class="modal__link" onclick="closeMenu()">Blog</a>
+            <a href="#pricing" class="modal__link" onclick="closeMenu()">Pricing</a>
+            <a href="#contact__us" class="modal__link" onclick="closeMenu()">Contact Us</a>
+            <a href="#login" class="modal__link" onclick="closeMenu()">Login</a>
+            <a href="#signup" class="modal__link modal__link--primary" onclick="closeMenu()">Sign Up</a>
+            </div>
+        </div>   
         <header>
             <div class="container">
                 <div class="row">
